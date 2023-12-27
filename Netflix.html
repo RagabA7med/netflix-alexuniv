@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Common Styles */
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        body {
+        background-color: #111;
+        color: #FFF;
+        font-family: Arial, sans-serif;
+        }
+
+        .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+        background-image: url(felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        }
+
+        .logo img {
+        height: 40px;
+        }
+
+        ul {
+        display: flex;
+        list-style-type: none;
+        }
+
+        li {
+        margin-left: 20px;
+        }
+
+        a {
+        text-decoration: none;
+        color: #FFF;
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+        }
+
+        a:hover {
+        opacity: 1;
+        }
+
+        .search {
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        border-radius: 5px;
+        }
+
+        input[type="text"] {
+        background-color: transparent;
+        border: none;
+        color: #FFF;
+        margin-right: 10px;
+        }
+
+        button {
+        background-color: #e50914;
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+        background-color: #bf0d10;
+        }
+
+        /* Hero */
+        .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        }
+
+        .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        }
+
+        .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        }
+
+        button {
+        font-size: 1.5rem;
+        }
+
+        /* Cards */
+        .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        }
+
+        .card {
+        background-color: #1c1c1c;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        flex-basis: 30%;
+        margin-bottom: 20px;
+        }
+
+        .card img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+        }
+
+        .card .content {
+        padding: 20px;
+        }
+
+        .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        }
+
+        .card p {
+        font-size: 1rem;
+        opacity: 0.7;
+        line-height: 1.2;
+        }
+
+        /* CTA */
+        .cta {
+        background-color: #333;
+        color: #FFF;
+        text-align: center;
+        padding: 60px 0;
+        }
+
+        .cta h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        }
+
+        input[type="email"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 20px;
+        }
+
+        /* Footer */
+        .footer {
+        background-color: #111;
+        color: #FFF;
+        padding: 40px 0;
+        text-align: center;
+        }
+
+        .footer p {
+        margin-bottom: 20px;
+        opacity: 0.7;
+        }
+
+        .footer ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+
+        .footer li {
+        margin: 0 10px;
+        }
+
+        .footer li:first-child {
+        margin-left: 0;
+        }
+
+        .footer li:last-child {
+        margin-right: 0;
+        }
+
+        .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .social-media li {
+        margin: 0 10px;
+        }
+
+        .social-media li:first-child {
+        margin-left: 0;
+        }
+
+        .social-media li:last-child {
+        margin-right: 0;
+        }
+
+        .social-media a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e50914;
+        color: #FFF;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease-in-out;
+        }
+
+        .social-media a:hover {
+        background-color: #bf0d10;
+        }
+
+        @media screen and (max-width: 768px) {
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+        }
+
+        .cards .card {
+            flex-basis: 48%;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+        }
+
+        input[type="email"] {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            flex-wrap: wrap;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+        <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo">
+        </div>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="https://www.bing.com/ck/a?!&&p=62f6150e642542eaJmltdHM9MTY4Mjk4NTYwMCZpZ3VpZD0yYTMxYjExMy1kN2Y5LTY5ODMtMzg1OC1hMDNiZDNmOTY3MjImaW5zaWQ9NTQ2OQ&ptn=3&hsh=3&fclid=2a31b113-d7f9-6983-3858-a03bd3f96722&psq=netflix&u=a1aHR0cHM6Ly93d3cubmV0ZmxpeC5jb20vYnJvd3NlL2dlbnJlLzgz&ntb=1">TV Shows & Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+        <br>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        </nav>
+        <div class="hero">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <a href="log2.html"><button>Try It Now</button></a>
+        
+        </div>
+        
+    </header>
+    <br>
+    <hr>
+    <br>
+    <main>
+        <section class="cards">
+        <div class="card">
+            <img src="https://resizing.flixster.com/I6jTABrhudWP8ci4hykJRiRptKg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjUyNDkxNC53ZWJw"
+            alt="Stranger Things">
+            <div class="content">
+            <h3>Stranger Things</h3>
+            <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments.</p>
+            <br>
+            <p>Add to watch list <button>+</button></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://resizing.flixster.com/aX9Yz5sNV2WpBA5CoENzIl9RbTM=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjI2NTU1OS53ZWJw"
+            alt="The Crown">
+            <div class="content">
+            <h3>The Crown</h3>
+            <p>The inside story of two of the most famous addresses in the world – Buckingham Palace and 10 Downing Street
+                – and the intrigues, love lives and machinations behind the great events that shaped the second half of the
+                20th century.</p>
+            <p>Add to watch list <button>+</button></p>
+            </div>
+        </div>
+        <div class="card">
+            <img
+            src="https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA=="
+            alt="Money Heist">
+            <div class="content">
+            <h3>Money Heist</h3>
+            <p>A group of very peculiar robbers assault the Factory of Moneda and Timbre to carry out the most perfect
+                robbery in the history of Spain and take home 2.4 billion euros.</p>
+            <p>Add to watch list <button>+</button></p>    
+            </div>
+        </div>
+        </section>
+        <div class="cta">
+        <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+        <input type="email" placeholder="Email address">
+        <button>Get Started</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul>
+        <li><a href="#">FAQ</a></li>
+
+</body>
+</html>

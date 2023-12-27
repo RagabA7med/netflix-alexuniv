@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Netfelx" content="log in and sign up">
+    <title>Log in </title>
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+
+}
+body{
+background-image: url("logpic.jpg");
+ background-size: cover ; 
+
+
+
+}
+.p{
+    color: white;
+}
+.container{
+     font-family: Arial, Helvetica, sans-serif; 
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 1%;
+    width: 440px;
+    height: 590px;
+background-color: rgb(20, 19, 19);    
+
+
+}
+.container h1{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+input{
+margin-left: 50px;
+margin-top: 20px;
+width: 320px;
+height: 47px;
+background-color: #f3f3f3;
+border-radius: 3px;
+border: none;
+font-size: 20px;
+
+}
+input::placeholder{
+font-size: 17px;
+margin-left: 15px;
+padding: 12px;
+
+}
+input[type=submit]{
+    width: 320px;
+    height: 45px;
+    background-color: red;
+
+}
+input[type=checkbox]{
+width: 25px;
+height: 18px;
+border-radius: 5px;
+}
+
+.form a{
+float: right;
+margin-top: 24px;
+margin-right: 135px;
+text-decoration: none;
+
+
+}
+.form p{
+    float: right;
+
+margin-top: 24px;
+margin-right: 190px;
+
+}
+.form button{
+background-color: green;
+    float: right;
+
+margin-top: 24px;
+margin-right: 145px;
+
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+
+        
+        <h1>      log in to Netflex</h1>
+
+<div class="form">
+    <form>
+        <div class="email">
+            
+            <input type="email" placeholder="Email Address" required >   
+    
+        </div>
+    <br>
+    <div class="password"> 
+           
+            <input type="password" placeholder="Password" required>
+    </div>
+    <br>
+    <div class="log in">
+        <input type="submit" value="Log in" onclick="location.href='HomePage.html'">
+
+
+ </div>
+ 
+    <input type="checkbox">
+<label style="color: gray;">remember me</label>
+    <br>
+    <br>
+        
+   <a href="#" style="color: gray;" >forgot password ?</a>
+   <br> <br> 
+   <p  style=  "color: gray;"  >or</p>
+   <br>
+    
+   <div class="new">
+    <button onclick="location.href='log2.html'">create new account</button>
+    </div>
+    
+    </form>
+    
+</div>            
+                        
+    </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+     }
+     body{
+background-image: url("logpic.jpg");
+ background-size: cover ; 
+}
+
+
+.container{
+color: white;
+font-family: Arial, Helvetica, sans-serif; 
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 4%;
+    width: 440px;
+    height: 590px;
+background-color: rgb(20, 19, 19);                 
+}
+.container h1{
+    color: white;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.container h4{
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+input{
+margin-left: 50px;
+margin-top: 20px;
+width: 320px;
+height: 47px;
+background-color: #f3f3f3;
+border-radius: 3px;
+border: none;
+font-size: 20px;
+}
+input::placeholder{
+font-size: 17px;
+margin-left: 15px;
+padding: 12px;
+
+}
+input[type=submit]{
+    width: 320px;
+    height: 42px;
+    background-color: red;
+
+}
+input[type=radio]{
+width: 25px;
+height: 10px;
+border-radius: 10px;
+}
+.birthdate{
+    margin-top: -15px;
+    margin-left: 1px;
+}
+.gender{
+    margin-top: -10px;
+    margin-left: 20px;
+
+}
+     
+</style>
+   
+
+<script>
+     function myFunction(){
+    
+        let x = 'Welcome to Sign UP : '+'"';
+        let y = document.getElementById('fname').value;
+        let z = '"';
+        let msg = x + y + z ;
+        const output = document.getElementById('msgOutput');
+        output.style.display = 'block';
+        output.innerHTML = msg;
+
+        if(onclick="myFunction()"){
+        alert(msg)}
+
+     }
+
+
+</script>
+
+</head>
+<body>
+    <div class="container">
+<h1>Create new account</h1> 
+<br>
+<h4>It's quick and easy.</h4>
+<br>
+<div class="form">
+    <form >
+
+        <div class="name">
+    
+                        <label ><input type="text" placeholder="first name" required  id="fname"></label> 
+                        <input type="text" placeholder="sur name" required>
+      </div>
+    
+    <div class="email">
+    
+                        <input type="email" placeholder="Email address" required>
+    
+    </div>
+    
+    <div class="password">
+    
+    <input type="password" placeholder="New password" required>
+    
+    
+    </div>
+    <br>
+    <div class="birthdate">
+        
+        <input type="date">
+       
+    </div>
+    
+    <br>
+    
+    <div class="gender">
+
+<label  style="margin-left:40px;  "  >gender</label>    
+<br>
+              <input type="radio">
+              <label style="color: gray;">male</label>
+              <input type="radio">
+              <label style="color: gray;">female</label>
+              <a href="login.html">I have an account</a>
+    </div>
+ 
+    <div class="sign up">
+    <input type="submit" value="sign up" onclick="myFunction();location.href='login.html'" >
+    <h1 style="font-style:italic; color:white;" id="msgOutput"></h1>
+    
+    </div>
+    </form>
+</div>
+
+</p>
+
+
+    </div>
+</body>
+</html>

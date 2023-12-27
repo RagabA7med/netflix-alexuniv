@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch List</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #111;
+            color: #FFF;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: black;
+            background-size: cover;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            opacity: 0.7;
+            text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+            transition: text-decoration-color 300ms;
+        }
+
+        a:hover {
+            opacity: 1;
+            color: #bf0d10;
+            text-transform: uppercase;
+            text-decoration-color: #bf0d10;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            background-color: transparent;
+            border: none;
+            color: #FFF;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #e50914;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #bf0d10;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="menu">
+        <div class="logo">
+            <img src="netflix-logo.png" alt="Netflix Logo">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a></li>
+                    <br>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <h1 style="margin-left: 10px;">My List</h1>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=HyNJ3UrGk_I"><img src="equalizer.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=BmllggGO4pM"><img src="g.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=Fo3yRLLrXQA"><img src="trip.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=the+mask+trailer&sxsrf=APwXEdfsKa3qDsUS-42yUnByLorfRDzG6A%3A1683048089051&ei=mUZRZPy4ApeQkdUPyOWDsAs&ved=0ahUKEwi86fLbktf-AhUXSKQEHcjyALYQ4dUDCA8&uact=5&oq=the+mask+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBM6BwgjELADECc6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoSCC4QigUQ1AIQyAMQsAMQQxgCOgYIABAHEB46CQgAEA0QExCABEoECEEYAFDtGVjWI2C0J2gDcAF4AIABeIgB0gaSAQMyLjaYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz-serp#fpstate=ive&vld=cid:4b47edd8,vid:LZl69yk5lEY"><img src="mask.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=AST2-4db4ic"><img src="little.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=wb49-oV0F78"><img src="mission.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=rk-dF1lIbIg"><img src="spider.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=Ith2WetKXlg"><img src="army.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=dtKMEAXyPkg"><img src="legend.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=aH6vC-BBKOc"><img src="high.jpg"></a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <br>        
+        <h1 style="margin-left: 10px;">Watched</h1>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.google.com/search?q=hunter+x+humter+trailer&sxsrf=APwXEddqeizBV1avOnRHVL29SMxHa8NU5g%3A1683051210074&ei=ylJRZIWJBNWikdUP4NuC2AE&ved=0ahUKEwiFlo-sntf-AhVVUaQEHeCtABsQ4dUDCA8&uact=5&oq=hunter+x+humter+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIJCAAQDRATEIAEMgkIABANEBMQgAQyCQgAEA0QExCABDIJCAAQDRATEIAEMggIABAeEA0QEzIICAAQHhANEBMyCAgAEB4QDRATMgoIABAFEB4QDRATMgoIABAIEB4QDRATMgoIABAIEB4QDRATOgYIABAHEB46CAgAEAcQHhAKOgUIABCiBEoECEEYAFAAWOYZYMgbaABwAHgAgAHRAYgBvxCSAQYwLjEzLjKYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:3c8f71a9,vid:d6kBeJjTGnY"><img src="hunter.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=kaleidoscope+trailer&sxsrf=APwXEdcBn0yanbpUrP9uhe9USjI7lQ5OyA%3A1683051607336&ei=V1RRZOH5E-eQkdUPufy-mAQ&oq=kalido+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgsIABAHEB4Q8QQQCjIGCAAQBxAeOgoIABBHENYEELADOggIABAHEB4QEzoNCAAQBxAeEPEEEBMQCkoECEEYAFDxFlieLGDEPGgBcAF4AIABkAGIAYQGkgEDMC42mAEAoAEByAEIwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:afd45c3e,vid:YbArSoOP8XQ"><img src="kalido.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=orange+is+the+new+blakc%27+trailer&sxsrf=APwXEdfM_TUBO_TDRK9eIZTa_3aCqtPx7w%3A1683051722476&ei=ylRRZKzVHJOjkdUPqeaC2Ac&ved=0ahUKEwis4rmgoNf-AhWTUaQEHSmzAHsQ4dUDCA8&uact=5&oq=orange+is+the+new+blakc%27+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQDRCABDIGCAAQHhANMgYIABAeEA0yBggAEB4QDTIGCAAQHhANMgYIABAeEA0yBggAEB4QDTIGCAAQHhANMgYIABAeEA0yBggAEB4QDToGCAAQBxAeOggIABAHEB4QDzoICAAQgAQQywE6BggAEB4QDzoICAAQBRAeEA86CwgAEAUQBxAeEPEEOggIABAIEAcQHjoICAAQCBAeEA06CAgAEAcQHhATSgQIQRgAUABYpzRg1TRoBXABeACAAYoBiAGIG5IBBDAuMjiYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:6f572fdb,vid:vY0qzXi5oJg"><img src="orange.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=narcos+trailer&sxsrf=APwXEdfJlJlN0HZ_uJrn5_6QQZ0vIrW8UA%3A1683051841470&ei=QVVRZK-cHJqekdUP54e8wAU&ved=0ahUKEwjvwJjZoNf-AhUaT6QEHecDD1gQ4dUDCA8&uact=5&oq=narcos+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOggIABAHEB4QE0oECEEYAFAAWIoIYLcLaABwAXgAgAFviAGJBZIBAzAuNpgBAKABAcABAQ&sclient=gws-wiz-serp#fpstate=ive&vld=cid:49dc12b7,vid:xl8zdCY-abw"><img src="narcos.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=rush+hour+3+trailer&sxsrf=APwXEddmXVyKv3kUppEIgk9SHhKvodXPkQ%3A1683051897980&ei=eVVRZIGlO5qnkdUPqNuAmAQ&ved=0ahUKEwjBxZH0oNf-AhWaU6QEHagtAEMQ4dUDCA8&uact=5&oq=rush+hour+3+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBM6BggAEAcQHkoECEEYAFAAWLoZYLAaaABwAHgAgAGRA4gB-g2SAQkwLjcuMS4xLjGYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:eddcc5a0,vid:FRDRWXfQyJE"><img src="rush.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.google.com/search?q=seven+deadly+sins+trailer&sxsrf=APwXEdcCqNHRCsf99OH0VX7PZBig_65cCA%3A1683051992847&ei=2FVRZKKCM6aikdUP1ceV2Aw&ved=0ahUKEwiizq-hodf-AhUmUaQEHdVjBcsQ4dUDCA8&uact=5&oq=seven+deadly+sins+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOggIABAHEB4QEzoICAAQgAQQywE6CAgAEAgQHhANSgQIQRgAUABY8iJg5iRoAnABeACAAZoBiAGJEZIBBDEuMTiYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:4720406a,vid:wxcvbL6o55M"><img src="seven.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=parasute+anime+trailer&sxsrf=APwXEdcykETpIc3d9r0lt_tzVmUBCtZf2g%3A1683052167698&ei=h1ZRZKmcKqufkdUP8cugIA&ved=0ahUKEwjp-9_0odf-AhWrT6QEHfElCAQQ4dUDCA8&uact=5&oq=parasute+anime+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIJCAAQDRATEIAEMgkIABANEBMQgAQyCAgAEB4QDRATOgoIABBHENYEELADOgcIIxCwAhAnOgYIABAeEA06CgghEKABEMMEEAo6CAgAEAgQHhANSgQIQRgAUJIIWLgaYLgbaANwAXgAgAGeAYgByAaSAQMwLjeYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:8dcdb16a,vid:XIkxx3JRt-U"><img src="para.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=jojo+trailer&sxsrf=APwXEdcz3KDR0Oi0rR9kxx_m6rJY9GGSlQ%3A1683052178113&ei=klZRZK_JBoGqkdUP5tu44A4&ved=0ahUKEwiv2tv5odf-AhUBVaQEHeYtDuwQ4dUDCA8&uact=5&oq=jojo+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIICAAQBxAeEAoyBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46CAgAEAcQHhATOgoIABAHEB4QExAKSgQIQRgAUABY7AJgoAhoAHABeACAAZ4BiAHrA5IBAzAuNJgBAKABAcABAQ&sclient=gws-wiz-serp#fpstate=ive&vld=cid:00065c56,vid:EeCX8Y0a278"><img src="jojo.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=NaB_ERMAZu4"><img src="guilty.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=shaun+the+sheep%27+trailer&sxsrf=APwXEdfM1bNV88MMlTH4d2ZR2Awos_pZrw%3A1683052298730&ei=CldRZOD4K_yqkdUPnvKg4Ak&ved=0ahUKEwjgpZ2zotf-AhV8VaQEHR45CJwQ4dUDCA8&uact=5&oq=shaun+the+sheep%27+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOggIABAIEB4QDToGCAAQHhANSgQIQRgAUABY_i9gnTJoBHABeACAAa4BiAGpFJIBBDAuMTmYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:a014c4ab,vid:tQvwiOWpj7o"><img src="shaun.jpg"></a>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

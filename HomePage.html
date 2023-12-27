@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #111;
+            color: #FFF;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: black;
+            background-size: cover;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            
+            
+        }
+
+        .logo img {
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            opacity: 0.7;
+            text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+            transition: text-decoration-color 300ms;
+        }
+
+        a:hover {
+            opacity: 1;
+            color: #bf0d10;
+            text-transform: uppercase;
+            text-decoration-color: #bf0d10;
+            
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            background-color: transparent;
+            border: none;
+            color: #FFF;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #e50914;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #bf0d10;
+        }
+
+        .img {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .img img {
+            vertical-align: middle;
+        }
+
+        .img .content1 {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 250px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            justify-content: space-around;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .card .content {
+            padding: 20px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            opacity: 0.7;
+            line-height: 1.2;
+        }
+
+        @media screen and (max-width: 768px) {
+            .cards .card {
+            flex-basis: 48%;
+        }
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+    </style>
+
+
+    <script>
+        function displayDate(){
+            document.getElementById("showDate").innerHTML=Date();
+        }
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="menu">
+        <div class="logo">
+            <img src="netflix-logo.png" alt="Netflix Logo">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#Tnow">Trending Now</a></li>
+                        <li><a href="#TVs">TV Shows</a></li>
+                        <li><a href="#movie">Movies</a></li>
+                        <li><a href="WatchList.html">My List</a></li>
+                    <br>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        </nav>
+    </header>
+
+    <div class="img">
+        <img src="the grey man.jpg" alt="The grey man" style="width: 100%;">
+        <div class="content1">
+            <img src="LogoGM.png" alt="logo" style="width: 50%;">
+            <br>
+            <br>
+            <br>
+            <h1>The Gray Man</h1>
+            <br>
+            <p>2024 | Maturity Rating: +13 | 2h 9m | Action</p>
+            <br>
+            <p>When a shadowy CIA agent uncovers damning agency secrets,</p>
+            <p>he’s hunted across the globe by a sociopathic rogue operative</p>
+            <p>who’s put a bounty on his head.</p>
+            <br>
+            <p><b>Strarring:</b> Ryan Gosling, Chris Evans, Ana de Armas</p>
+            <br>
+            <button type="button" onclick="displayDate()">Show Date</button>
+            <br><br><p id="showDate"></p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <main>
+        <a name="Tnow"></a>
+        <h1 style="margin-left: 10px;">Trending Now</h1>
+        <br>
+        <section class="cards">        
+            <div class="card">
+                <a href="https://www.youtube.com/watch?v=YLE85olJjp8"><img src="6 underground.jpg" alt="6 UNDERGROUND"></a>
+            </div>
+            <div class="card">
+                <a href="https://www.google.com/search?q=murder+trailer+2+trailer&sxsrf=APwXEddyXP6jof5V_TuYbvayIX38cKWuGA%3A1683044456739&ei=aDhRZOHeLKOhkdUPr9emkAI&oq=murder+trailer+2+tra&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgUIIRCgATIICCEQFhAeEB0yCAghEBYQHhAdMggIIRAWEB4QHTIICCEQFhAeEB0yCAghEBYQHhAdOgYIABAHEB46CAgAEAcQHhAKOggIABAHEB4QEzoICAAQgAQQywE6CAgAEBYQHhAPOgYIABAWEB46CAgAEBYQHhAKOgsIABAWEB4Q8QQQCjoECCEQFUoECEEYAFAAWN5IYPNXaAJwAXgAgAGOAYgBxw2SAQQxLjE0mAEAoAEBwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:e7fbd2f6,vid:LM2F56uK0fs"><img src="murdermystry.jpg" alt="Murder Mystery 2"></a>
+            </div>
+            <div class="card">
+                <a href="https://www.youtube.com/watch?v=wZti8QKBWPo"><img src="nobody.jpg" alt="Nobody"></a>
+            </div>
+            
+        </section>
+        <hr>
+        <br>
+        <h1 style="margin-left: 10px;">Top Rated</h1>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=WHXxVmeGQUc"><img src="the ireshmanjpg.jpg"></a>
+                    </div> 
+                </td>
+                <td>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=mjKEXxO2KNE"><img src="sully.jpg"></a>
+                    </div> 
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=BpdDN9d9Jio"><img src="a quiet place.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=J1JdWOqc9Q8"><img src="apostle.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=coach+carter+trailer&sxsrf=APwXEde0f53H-LodyvLCYZLxADjJMiR3aQ%3A1683047010627&ei=YkJRZKz6JdOTkdUPvJSIiAw&ved=0ahUKEwiss9XZjtf-AhXTSaQEHTwKAsEQ4dUDCA8&uact=5&oq=coach+carter+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yCAgAEIAEEMsBMgQIABAeMgQIABAeMgQIABAeMgYIABAHEB4yBggAEAgQHjoICAAQBxAeEAo6CQgAEA0QExCABDoNCAAQHhANEPEEEBMQCjoKCAAQHhANEA8QEzoICAAQHhANEBM6CggAEAUQHhANEBM6CAgAEAcQHhATOgoIABAHEB4QExAKOggIABAIEAcQHkoECEEYAFAAWP0ZYPUbaAFwAXgAgAGeAYgB0QySAQQwLjEzmAEAoAEBwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:7abba3b8,vid:MV5v0zNDrlE"><img src="coach.jpg"></a>
+                </td>
+            </tr>
+            <br>
+            
+        </table>
+        <hr>
+        <br>
+        <a name="TVs"></a>
+        <h1 style="margin-left: 10px;">TV Shows</h1>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.google.com/search?q=the+walking+dead+trailer&oq=the+walking+dead+tra&aqs=chrome.0.0i512j69i57j0i22i30l8.4837j0j15&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:89946d0c,vid:R1v0uFms68U"><img src="dead.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=breaking+bad+trailer&sxsrf=APwXEdds6-Q1vUtczcS0IWIkv6ZimCdW8g%3A1683050452243&ei=1E9RZJGwDu2tkdUPl9226AI&ved=0ahUKEwiR6uDCm9f-AhXtVqQEHZeuDS0Q4dUDCA8&uact=5&oq=breaking+bad+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOggIABAHEB4QCjoICAAQBxAeEBNKBAhBGABQAFiYFWDBF2gBcAF4AIABiwGIAaMKkgEDNC44mAEAoAEBwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:c608dbf4,vid:HhesaQXLuRY"><img src="bad.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=money+heinst+trailer&sxsrf=APwXEdeEtu5T6aq8yq9weGUTdCGq5mGv_Q%3A1683050547522&ei=M1BRZIW6H4ejkdUPupaVCA&ved=0ahUKEwjFn5jwm9f-AhWHUaQEHTpLBQEQ4dUDCA8&uact=5&oq=money+heinst+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIJCAAQDRATEIAEMgkIABANEBMQgAQyCQgAEA0QExCABDIJCAAQDRATEIAEMgkIABANEBMQgAQyCQgAEA0QExCABDIJCAAQDRATEIAEMggIABAeEA0QEzIICAAQHhANEBMyCAgAEB4QDRATOgYIABAHEB46CwgAEAcQHhDxBBAKOgUIABCiBDoKCCEQoAEQwwQQCkoECEEYAFAAWI8gYMEiaARwAXgAgAGdAYgBww6SAQQxLjE1mAEAoAEBwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:deec4ffd,vid:_InqQJRqGW4"><img src="money.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=wednesday+trailer&sxsrf=APwXEdcsgxR0IRUoR8W-svTeuZm-Chllcw%3A1683050721377&ei=4VBRZPW7FuSlkdUPyYW22Aw&oq=wednde+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgcIABANEIAEMgYIABAeEA0yBggAEB4QDTIGCAAQHhANMgYIABAeEA0yBggAEB4QDTIGCAAQHhANMgYIABAeEA0yBggAEB4QDTIGCAAQHhANOgYIABAHEB5KBAhBGABQAFidCWD-GWgAcAF4AIABaYgB4wSSAQMxLjWYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:7c5d0eb2,vid:Di310WS8zLk"><img src="wednesday.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=lucifer+trailer&sxsrf=APwXEdfUm6Tjc6nBndXPpQmxo4QZ5ZOgKQ%3A1683050788048&ei=JFFRZOuvAvybkdUPxpmZqAs&ved=0ahUKEwjr0fDinNf-AhX8TaQEHcZMBrUQ4dUDCA8&uact=5&oq=lucifer+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOggIABAHEB4QE0oECEEYAFAAWP8PYLERaABwAXgAgAF-iAGZBpIBAzAuN5gBAKABAcABAQ&sclient=gws-wiz-serp#fpstate=ive&vld=cid:f581b8dd,vid:X4bF_quwNtw"><img src="lucifer.jpg"></a>
+                </td>
+            </tr>
+            
+        </table>
+        <hr>
+        <br>
+        <a name="movie"></a>
+        <h1 style="margin-left: 10px;">Movies</h1>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=Pj0wz7zu3Ms"><img src="red.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=L6P3nI6VnlY"><img src="ex.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=AiohkY_XQYQ"><img src="troll.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=IE8HIsIrq4o"><img src="adam.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=OVBjPpUlQrE"><img src="mow.jpg"></a>
+                </td>
+            </tr>
+           
+        </table>
+        <hr>
+        <br>
+        <h1 style="margin-left: 10px;">Classic</h1>
+        <br>
+        <table>
+         
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=qYAETtIIClk"><img src="et.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=lawrence+of+arabia%27+trailer&sxsrf=APwXEdfq2l7wzABvbQEOZhXohvAuzx246Q%3A1683089269488&ei=dedRZNWoHZWX8gLFjrqgCg&ved=0ahUKEwiVt6GQrNj-AhWVi1wKHUWHDqQQ4dUDCA8&uact=5&oq=lawrence+of+arabia%27+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMggIABCABBDLAToICAAQBxAeEBM6CwgAEAcQHhDxBBAKOgYIABAIEB46CQgAEA0QExCABEoECEEYAFAAWNEoYIcpaABwAXgAgAGIAYgB_hCSAQQwLjE4mAEAoAEBwAEB&sclient=gws-wiz-serp#fpstate=ive&vld=cid:f814b9fc,vid:vOlRhGEhG7k"><img src="lawrence.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.google.com/search?q=stand+by+me+trailer&sxsrf=APwXEdeeysEIRbEc1H95ev8GxDhvaaVDXQ%3A1683089314833&ei=oudRZNi0MsOggQad75boAQ&ved=0ahUKEwjYjfGlrNj-AhVDUMAKHZ23BR0Q4dUDCA8&uact=5&oq=stand+by+me+trailer&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeOg0IABAHEB4Q8QQQExAKOgkIABANEBMQgAQ6DwgAEAgQBxAeEPEEEBMQCjoICAAQHhANEBM6CggAEB4QDRAPEBM6CggAEAUQHhANEBM6CAgAEAcQHhATSgQIQRgAUABYuChg6ipoBHABeACAAYYBiAGaDpIBBDAuMTWYAQCgAQHAAQE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:f186ec7d,vid:jaiZ6ZQoO-Y"><img src="stand.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=nMWHBUTHmf0"><img src="other.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=FRxmK7Q3yF4"><img src="cry.jpg"></a>
+                </td>
+            </tr>
+        </table>
+    </main>
+    
+
+</body>
+</html>
